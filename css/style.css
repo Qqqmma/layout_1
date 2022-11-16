@@ -102,48 +102,107 @@ body {
     margin: auto;
   }
 
-  .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-  }
+/* Header styles start*/
 
-  .header_wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-end;
-    justify-content: space-between;
-    padding-top: 55px;
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.header_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding-top: 55px;
 }
 
 .header_nav_list {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .header_list_item {
-    margin-right: 82px;
+  margin-right: 82px;
 }
 .header_list_item:last-child {
-    margin-right: 0px;
+  margin-right: 0px;
 }
 
 .header_link {
-    font-weight: 400;
-    font-size: 18px;
-    color: white;
-    text-decoration: none;
+  font-weight: 400;
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
 }
 .header_link:hover, .header_link:focus, .header_link:active {
-    opacity: .75;
+  opacity: .75;
 }
 
+/* Header styles end*/
 
-
+/* Intro styles start*/
 
 .intro {
-    height: 100vh;
-    background: url(../img/intro-bg.jpg) no-repeat;
-    background-size: cover;
+  min-height: 100vh;
+  background: url(../img/intro-bg.jpg) no-repeat;
+  background-size: cover;
+  padding-top: 263px;
+}
+
+.intro_title {
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 60px;
+  color: white;
+  max-width:  619px;
+  margin-bottom: 22px;
+}
+.intro_subtitle {
+  max-width: 546px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: white;
+  margin-bottom: 59px;
+}
+
+.search_form_info {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.search_form_filed {
+  width: 297px;
+  background: url(../img/svg/cercle-icon.svg) transparent no-repeat left 7px;
+  background-size: 20px;
+  border: 0;
+  border-bottom: 2px solid #BFC0C5;
+  margin-right: 60px;
+  padding-left: 43px;
+  padding-bottom: 22px;
+  font-weight: 500;
+  font-size: 18px;
+  color: white;
+}
+.search_form_filed::placeholder {
+  font-weight: 500;
+  font-size: 18px;
+  color: white;
+}
+
+.search_btn {
+  cursor: pointer;
+  padding: 15px 39px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 24px;
+  color: white;
+  background: #1B7DFF;
+  border: 0;
+}
+.search_btn:hover, .search_btn:focus, .search_btn:active {
+  background: #1060cb;
 }
